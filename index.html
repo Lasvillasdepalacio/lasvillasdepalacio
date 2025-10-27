@@ -25,25 +25,31 @@
     .container{max-width:1100px;margin:0 auto;padding:24px}
     header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--border)}
     .logo{display:flex;align-items:center;gap:12px}
-    .logo-mark{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,#22c55e,#16a34a);display:grid;place-items:center;font-weight:800}
+    .logo-mark{width:50px;height:50px;border-radius:10px;background:linear-gradient(135deg,#22c55e,#16a34a);display:grid;place-items:center;font-weight:800;font-size:1.6rem}
     .logo-mark span{color:#08372a}
-    .title{font-size:1.25rem;font-weight:700}
-    .badge{background:rgba(34,197,94,.15);color:#86efac;border:1px solid rgba(34,197,94,.35);padding:6px 10px;border-radius:999px;font-weight:600}
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:28px 0}
+    .title{font-size:clamp(1.6rem,2.4vw,2.4rem);font-weight:700}
+    .badge{background:rgba(34,197,94,.15);color:#86efac;border:1px solid rgba(34,197,94,.35);padding:8px 14px;border-radius:999px;font-weight:600;font-size:clamp(1.6rem,2.4vw,2.4rem)}
+
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:start;padding:28px 0}
     @media (max-width:900px){.hero{grid-template-columns:1fr}}
+    .hero-left{display:flex;flex-direction:column;gap:12px}
     .hero-card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid var(--border);border-radius:18px;overflow:hidden;cursor:pointer}
     .hero-card img{width:100%;height:340px;object-fit:cover;display:block}
-    .hero-copy{padding:8px 4px}
+
+    .hero-copy{padding:0 4px}
     h1{font-size:clamp(1.6rem,2.4vw,2.4rem);margin:0 0 8px}
-    .sub{color:var(--muted);margin:0 0 14px}
-    .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
+    .sub{color:var(--muted);margin:0 0 14px;font-size:1.2rem}
+
+    .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:0}
     .pill{border:1px solid var(--border);color:var(--fg);padding:6px 10px;border-radius:999px}
+
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
     @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
     @media (max-width:560px){.grid{grid-template-columns:1fr}}
     .card{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid var(--border);border-radius:14px;overflow:hidden;cursor:pointer}
     .card img{width:100%;height:220px;object-fit:cover;display:block}
     .card .cap{padding:10px 12px;color:var(--muted);font-size:.95rem}
+
     .contact{margin:28px 0;padding:16px;border:1px solid var(--border);border-radius:14px;display:grid;grid-template-columns:1fr 1fr;gap:16px;background:linear-gradient(180deg,rgba(56,189,248,.08),rgba(255,255,255,0));}
     @media (max-width:700px){.contact{grid-template-columns:1fr}}
     .contact h2{margin:0 0 8px;font-size:1.2rem}
@@ -51,9 +57,9 @@
     .info div{display:flex;gap:8px;align-items:center}
     .kpi{display:flex;gap:16px;flex-wrap:wrap}
     .kpi .item{border:1px solid var(--border);border-radius:10px;padding:10px 12px;background:linear-gradient(180deg,rgba(34,197,94,.08),rgba(255,255,255,0));}
-    .plan-note{font-size:.9rem;color:var(--muted)}
+    .plan-note{font-size:1.2rem;color:var(--muted)}
 
-    /* Estilos del modal de imagen */
+    /* Modal imágenes */
     .modal {display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.9);}
     .modal-content {margin:auto;display:block;max-width:90%;max-height:90%;}
     .close {position:absolute;top:20px;right:35px;color:#fff;font-size:40px;font-weight:bold;cursor:pointer;}
@@ -70,23 +76,28 @@
     </header>
 
     <section class="hero">
-      <div class="hero-card">
-        <img src="hero.jpg" alt="Vista general de la promoción Las Villas de Palacio" />
-      </div>
-      <div class="hero-copy">
-        <h1>Viviendas con encanto en Navas de Riofrío</h1>
-        <p class="sub">Promoción exclusiva de 8 viviendas de lujo ubicadas en un entorno inmejorable</p>
+      <!-- Izquierda: imagen principal + claims debajo -->
+      <div class="hero-left">
+        <div class="hero-card">
+          <img src="hero.jpg" alt="Vista general de la promoción Las Villas de Palacio" />
+        </div>
         <div class="pill-row">
           <span class="pill">Parcela Privada</span>
           <span class="pill">Amplitud y Tranquilidad</span>
           <span class="pill">Ubicación y Entorno</span>
           <span class="pill">Construcción de calidad</span>
         </div>
+      </div>
+
+      <!-- Derecha: textos -->
+      <div class="hero-copy">
+        <h1>Viviendas con encanto en Navas de Riofrío</h1>
+        <p class="sub">Promoción exclusiva de 8 viviendas de lujo ubicadas en un entorno inmejorable</p>
         <div class="kpi" style="margin-top:14px">
           <div class="item"><strong>Desde</strong> — <span>185.000€</span></div>
           <div class="item"><strong>Tamaños</strong> — <span>Parcelas de más de 1.000m² y viviendas de más de 330m²</span></div>
         </div>
-        <p class="plan-note" style="margin-top:10px">Viviendas con construcción avanzada para ser acabadas a medida.</p>
+        <p class="plan-note" style="margin-top:10px">Viviendas con construcción avanzada para ser acabadas a medida</p>
       </div>
     </section>
 
