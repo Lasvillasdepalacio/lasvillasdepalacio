@@ -38,10 +38,10 @@
 
     .hero-copy{padding:0 4px}
     h1{font-size:clamp(1.6rem,2.4vw,2.4rem);margin:0 0 8px}
-    .sub{color:var(--muted);margin:0 0 14px}
+    .sub{color:var(--muted);margin:0 0 14px;font-size:1.2rem}
 
-    .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:0}
-    .pill{border:1px solid var(--border);color:var(--fg);padding:6px 10px;border-radius:999px}
+    .pill-row{display:flex;justify-content:center;gap:20px;margin:0 auto;flex-wrap:nowrap;width:100%;}
+    .pill{border:1px solid var(--border);color:var(--fg);padding:6px 12px;border-radius:999px;white-space:nowrap;text-align:center}
 
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
     @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
@@ -57,7 +57,7 @@
     .info div{display:flex;gap:8px;align-items:center}
     .kpi{display:flex;gap:16px;flex-wrap:wrap}
     .kpi .item{border:1px solid var(--border);border-radius:10px;padding:10px 12px;background:linear-gradient(180deg,rgba(34,197,94,.08),rgba(255,255,255,0));}
-    .plan-note{font-size:.9rem;color:var(--muted)}
+    .plan-note{font-size:1.2rem;color:var(--muted);margin-top:8px;}
 
     /* Modal imágenes */
     .modal {display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.9);}
@@ -93,11 +93,11 @@
       <div class="hero-copy">
         <h1>Viviendas con encanto en Navas de Riofrío</h1>
         <p class="sub">Promoción exclusiva de 8 viviendas de lujo ubicadas en un entorno inmejorable</p>
-        <div class="kpi" style="margin-top:14px">
+        <p class="sub">Viviendas con construcción avanzada para ser acabadas a medida</p>
+        <div class="kpi">
           <div class="item"><strong>Desde</strong> — <span>185.000€</span></div>
           <div class="item"><strong>Tamaños</strong> — <span>Parcelas de más de 1.000m² y viviendas de más de 330m²</span></div>
         </div>
-        <p class="plan-note" style="margin-top:10px">Viviendas con construcción avanzada para ser acabadas a medida</p>
       </div>
     </section>
 
