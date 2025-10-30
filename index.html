@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Las Villas de Palacio</title>
-  <meta name="description" content="Promoción de viviendas con encanto en Navas de Riofrío – Las Villas de Palacio. Tres unidades pendientes. Contacto de agente inmobiliario." />
+  <meta name="description" content="Promoción de viviendas con encanto en Navas de Riofrío – Las Villas de Palacio. Tres unidades disponibles. Contacto de agente inmobiliario." />
   <meta property="og:title" content="Las Villas de Palacio" />
-  <meta property="og:description" content="Promoción de viviendas con encanto en Navas de Riofrío – 3 unidades pendientes." />
+  <meta property="og:description" content="Promoción de viviendas con encanto en Navas de Riofrío – 3 unidades disponibles." />
   <meta property="og:type" content="website" />
   <style>
     :root{
@@ -41,11 +41,9 @@
     h1{font-size:clamp(1.6rem,2.4vw,2.4rem);margin:0 0 8px}
     .sub{color:var(--muted);margin:0 0 14px;font-size:1.1rem}
 
-    /* Claims debajo de la imagen */
     .pill-row{display:flex;justify-content:center;gap:20px;margin:0 auto;flex-wrap:nowrap;width:100%}
     .pill{border:1px solid var(--border);color:var(--fg);padding:6px 12px;border-radius:999px;white-space:nowrap;text-align:center}
 
-    /* Galería */
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
     @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
     @media (max-width:560px){.grid{grid-template-columns:1fr}}
@@ -53,7 +51,6 @@
     .card img{width:100%;height:220px;object-fit:cover;display:block}
     .card .cap{padding:10px 12px;color:var(--muted);font-size:.95rem}
 
-    /* Contacto */
     .contact{margin:28px 0;padding:16px;border:1px solid var(--border);border-radius:14px;display:grid;grid-template-columns:1fr 1fr;gap:16px;background:linear-gradient(180deg,rgba(56,189,248,.08),rgba(255,255,255,0));}
     @media (max-width:700px){.contact{grid-template-columns:1fr}}
     .contact h2{margin:0 0 8px;font-size:1.2rem}
@@ -63,12 +60,10 @@
     .kpi .item{border:1px solid var(--border);border-radius:10px;padding:10px 12px;background:linear-gradient(180deg,rgba(34,197,94,.08),rgba(255,255,255,0));}
     .plan-note{font-size:1.1rem;color:var(--muted);margin-top:8px}
 
-    /* Modal imágenes */
     .modal {display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.9)}
     .modal-content {margin:auto;display:block;max-width:90%;max-height:90%}
     .close {position:absolute;top:20px;right:35px;color:#fff;font-size:40px;font-weight:bold;cursor:pointer}
 
-    /* --- Mejora de versión móvil/responsive --- */
     @media (max-width:640px){
       .container{padding:16px}
       .hero-card img{height:240px}
@@ -91,7 +86,6 @@
     </header>
 
     <section class="hero">
-      <!-- Izquierda: imagen principal + claims debajo -->
       <div class="hero-left">
         <div class="hero-card">
           <img src="hero.jpg" alt="Vista general de la promoción Las Villas de Palacio" loading="eager" width="1200" height="680" />
@@ -104,7 +98,6 @@
         </div>
       </div>
 
-      <!-- Derecha: textos -->
       <div class="hero-copy">
         <h1>Viviendas con encanto en Navas de Riofrío</h1>
         <p class="sub">Promoción exclusiva de 8 viviendas de lujo ubicadas en un entorno inmejorable</p>
@@ -124,6 +117,9 @@
       <figure class="card"><img src="foto-3.jpg" alt="Imagen de la parcela y entorno 3" loading="lazy" width="1200" height="880" /><figcaption class="cap">Render/Simulación: Interior</figcaption></figure>
       <figure class="card"><img src="foto-4.jpg" alt="Imagen de la parcela y entorno 4" loading="lazy" width="1200" height="880" /><figcaption class="cap">Render/Simulación: Interior</figcaption></figure>
       <figure class="card"><img src="foto-5.jpg" alt="Imagen de la parcela y entorno 5" loading="lazy" width="1200" height="880" /><figcaption class="cap">Render/Simulación: Interior</figcaption></figure>
+      <figure class="card"><img src="foto-6.jpg" alt="Foto adicional 1" loading="lazy" width="1200" height="880" /><figcaption class="cap">Foto</figcaption></figure>
+      <figure class="card"><img src="foto-7.jpg" alt="Foto adicional 2" loading="lazy" width="1200" height="880" /><figcaption class="cap">Foto</figcaption></figure>
+      <figure class="card"><img src="foto-8.jpg" alt="Foto adicional 3" loading="lazy" width="1200" height="880" /><figcaption class="cap">Foto</figcaption></figure>
     </div>
 
     <section class="contact">
@@ -143,7 +139,6 @@
     </section>
   </div>
 
-  <!-- Modal para ampliar imágenes -->
   <div id="imgModal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" id="imgModalContent" />
