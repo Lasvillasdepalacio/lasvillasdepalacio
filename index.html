@@ -29,7 +29,7 @@
     .logo-mark{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,#22c55e,#16a34a);display:grid;place-items:center;font-weight:800}
     .logo-mark span{color:#08372a}
     .title{font-size:1.25rem;font-weight:700}
-    .badge{background:rgba(34,197,94,.15);color:#86efac;border:1px solid rgba(34,197,94,.35);padding:6px 10px;border-radius:999px;font-weight:600}
+    .badge{background:rgba(34,197,94,.15);color:#86efac;border:1px solid rgba(34,197,94,.35);padding:6px 10px;border-radius:999px;font-weight:600;text-align:center;}
 
     .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:start;padding:28px 0}
     @media (max-width:900px){.hero{grid-template-columns:1fr}}
@@ -76,6 +76,7 @@
       .pill{padding:6px 10px;font-size:.95rem}
       .kpi .item{width:100%}
       .contact{gap:12px}
+      .badge{align-self:center;}
     }
   </style>
 </head>
@@ -86,7 +87,7 @@
         <div class="logo-mark"><span>VP</span></div>
         <div class="title">Las Villas de Palacio</div>
       </div>
-      <div class="badge" aria-label="Disponibilidad">3 unidades pendientes</div>
+      <div class="badge" aria-label="Disponibilidad">3 unidades disponibles</div>
     </header>
 
     <section class="hero">
@@ -117,7 +118,7 @@
 
     <h2 style="margin:6px 0 10px;font-size:1.1rem">Galería y plano</h2>
     <div class="grid">
-      <figure class="card"><img src="plano-parcelas.jpg" alt="Plano de parcelas disponibles" loading="lazy" width="1200" height="880" /><figcaption class="cap">Plano de Parcelas</figcaption></figure>
+      <figure class="card"><img src="plano-parcelas.jpg" alt="Plano de parcelas disponibles" loading="lazy" width="1200" height="880" /><figcaption class="cap">Plano de Parcelas Iniciales</figcaption></figure>
       <figure class="card"><img src="foto-1.jpg" alt="Imagen de la parcela y entorno 1" loading="lazy" width="1200" height="880" /><figcaption class="cap">Render/Simulación: Exterior</figcaption></figure>
       <figure class="card"><img src="foto-2.jpg" alt="Imagen de la parcela y entorno 2" loading="lazy" width="1200" height="880" /><figcaption class="cap">Render/Simulación: Exterior</figcaption></figure>
       <figure class="card"><img src="foto-3.jpg" alt="Imagen de la parcela y entorno 3" loading="lazy" width="1200" height="880" /><figcaption class="cap">Render/Simulación: Interior</figcaption></figure>
@@ -129,6 +130,8 @@
       <div>
         <h2>Contacto</h2>
         <div class="info">
+          <div><strong>María Taboada Vilarriño</strong></div>
+          <div>Ámbito Gestión Inmobiliaria</div>
           <div>📧 <a href="mailto:mmtaboada@gmail.com">mmtaboada@gmail.com</a></div>
           <div>📞 <a href="tel:+34619280149">619 280 149</a></div>
         </div>
